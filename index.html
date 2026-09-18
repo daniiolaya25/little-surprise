@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Una pequeña sorpresa 💕</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at 15% 15%, #fff 0 3px, transparent 4px),
+    radial-gradient(circle at 85% 20%, #f4d6d9 0 4px, transparent 5px),
+    linear-gradient(145deg, #fffaf6, #fcebed);
+  color: #684b4e;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  padding: 45px 22px 35px;
+  text-align: center;
+  position: relative;
+}
+
+.tiny {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #b98a8f;
+  margin-bottom: 14px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 39px;
+  font-weight: 500;
+  color: #9d6269;
+}
+
+.intro {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px auto 24px;
+  color: #735c5f;
+}
+
+.instructions {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #a77c81;
+  margin-bottom: 13px;
+}
+
+.scratch-wrap {
+  width: min(88vw, 360px);
+  height: 390px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(112, 72, 77, 0.15);
+  background: #fff;
+}
+
+.reveal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 20% 20%, #ffffff 0 2px, transparent 3px),
+    linear-gradient(160deg, #fff9f6, #f8dfe3);
+}
+
+.reveal-content {
+  animation: breathe 2.5s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  50% { transform: scale(1.035); }
+}
+
+.baby {
+  font-size: 58px;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  letter-spacing: 5px;
+  color: #b1747c;
+  font-weight: 600;
+}
+
+.big-message {
+  font-size: 38px;
+  line-height: 1.1;
+  color: #92545e;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+.heart {
+  font-size: 35px;
+}
+
+.secret {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #8c7477;
+  margin-top: 18px;
+  line-height: 1.5;
+}
+
+#scratch {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: pointer;
+}
+
+.progress {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #ae858a;
+}
+
+.footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin-top: 28px;
+  font-size: 13px;
+  color: #b79599;
+}
+
+.confetti {
+  position: fixed;
+  top: -20px;
+  z-index: 100;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0.9;
+  }
+}
+
+.sparkle {
+  position: absolute;
+  color: #d8aaaf;
+  opacity: .6;
+  font-size: 20px;
+}
+
+.s1 { top: 8%; left: 7%; }
+.s2 { top: 14%; right: 7%; }
+.s3 { bottom: 13%; left: 8%; }
+.s4 { bottom: 7%; right: 9%; }
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <div class="sparkle s1">♡</div>
+  <div class="sparkle s2">✦</div>
+  <div class="sparkle s3">✦</div>
+  <div class="sparkle s4">♡</div>
+
+  <div class="tiny">solo para ti</div>
+
+  <h1>María… 💕</h1>
+
+  <div class="intro">
+    Tenemos una pequeña sorpresa<br>
+    que queremos que descubras tú misma.
+  </div>
+
+  <div class="instructions">
+    ✨ Raspa la tarjeta con tu dedo ✨
+  </div>
+
+  <div class="scratch-wrap">
+
+    <div class="reveal">
+      <div class="reveal-content">
+        <div class="baby">👶🏻</div>
+
+        <div class="name">MARÍA</div>
+
+        <div class="big-message">
+          ¡VAS A<br>SER TÍA!
+        </div>
+
+        <div class="heart">💕</div>
+
+        <div class="secret">
+          La familia está creciendo…<br>
+          pero shhh 🤫 esto todavía es un secreto.
+        </div>
+      </div>
+    </div>
+
+    <canvas id="scratch"></canvas>
+
+  </div>
+
+  <div class="progress" id="progress">
+    Desliza tu dedo para descubrir la sorpresa
+  </div>
+
+  <div class="footer">
+    Hecho con mucho amor ♡
+  </div>
+
+</div>
+
+<script>
+const canvas = document.getElementById("scratch");
+const ctx = canvas.getContext("2d");
+const wrap = document.querySelector(".scratch-wrap");
+const progress = document.getElementById("progress");
+
+let drawing = false;
+let finished = false;
+
+function setupCanvas() {
+  const rect = wrap.getBoundingClientRect();
+  const ratio = window.devicePixelRatio || 1;
+
+  canvas.width = rect.width * ratio;
+  canvas.height = rect.height * ratio;
+  canvas.style.width = rect.width + "px";
+  canvas.style.height = rect.height + "px";
+
+  ctx.scale(ratio, ratio);
+
+  const gradient = ctx.createLinearGradient(0, 0, rect.width, rect.height);
+  gradient.addColorStop(0, "#d8b36a");
+  gradient.addColorStop(0.45, "#b98a3e");
+  gradient.addColorStop(0.7, "#e1c47c");
+  gradient.addColorStop(1, "#ad7b32");
+
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, rect.width, rect.height);
+
+  // textura
+  for (let i = 0; i < 500; i++) {
+    ctx.fillStyle = Math.random() > .5
+      ? "rgba(255,255,255,.10)"
+      : "rgba(95,55,15,.08)";
+    ctx.beginPath();
+    ctx.arc(
+      Math.random() * rect.width,
+      Math.random() * rect.height,
+      Math.random() * 1.5,
+      0,
+      Math.PI * 2
+    );
+    ctx.fill();
+  }
+
+  ctx.fillStyle = "rgba(255,255,255,.95)";
+  ctx.textAlign = "center";
+
+  ctx.font = "600 18px -apple-system, BlinkMacSystemFont, sans-serif";
+  ctx.fillText("✨ RASPA AQUÍ ✨", rect.width/2, rect.height/2 - 10);
+
+  ctx.font = "14px -apple-system, BlinkMacSystemFont, sans-serif";
+  ctx.fillText("con tu dedo", rect.width/2, rect.height/2 + 20);
+}
+
+function position(e) {
+  const rect = canvas.getBoundingClientRect();
+  const point = e.touches ? e.touches[0] : e;
+
+  return {
+    x: point.clientX - rect.left,
+    y: point.clientY - rect.top
+  };
+}
+
+function scratch(e) {
+  if (!drawing || finished) return;
+
+  e.preventDefault();
+
+  const p = position(e);
+
+  ctx.globalCompositeOperation = "destination-out";
+  ctx.beginPath();
+  ctx.arc(p.x, p.y, 28, 0, Math.PI * 2);
+  ctx.fill();
+}
+
+function start(e) {
+  drawing = true;
+  scratch(e);
+}
+
+function stop() {
+  if (!drawing) return;
+  drawing = false;
+  checkScratch();
+}
+
+canvas.addEventListener("touchstart", start, {passive:false});
+canvas.addEventListener("touchmove", scratch, {passive:false});
+canvas.addEventListener("touchend", stop);
+
+canvas.addEventListener("mousedown", start);
+canvas.addEventListener("mousemove", scratch);
+canvas.addEventListener("mouseup", stop);
+canvas.addEventListener("mouseleave", stop);
+
+function checkScratch() {
+  const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+
+  let transparent = 0;
+
+  for (let i = 3; i < data.length; i += 80) {
+    if (data[i] < 100) transparent++;
+  }
+
+  const sampled = data.length / 80;
+
+  if (transparent / sampled > 0.42) {
+    revealAll();
+  }
+}
+
+function revealAll() {
+  if (finished) return;
+
+  finished = true;
+
+  canvas.style.transition = "opacity 1s ease";
+  canvas.style.opacity = "0";
+
+  progress.innerHTML = "💕 ¡SORPRESA! 💕";
+
+  confetti();
+
+  setTimeout(() => {
+    canvas.style.display = "none";
+  }, 1000);
+}
+
+function confetti() {
+  const pieces = ["💕","✨","♡","🎉","💗"];
+
+  for (let i = 0; i < 55; i++) {
+    const el = document.createElement("div");
+
+    el.className = "confetti";
+    el.innerText = pieces[Math.floor(Math.random()*pieces.length)];
+
+    el.style.left = Math.random()*100 + "vw";
+    el.style.fontSize = (14 + Math.random()*18) + "px";
+    el.style.animationDuration = (2.5 + Math.random()*3) + "s";
+    el.style.animationDelay = Math.random()*.7 + "s";
+
+    document.body.appendChild(el);
+
+    setTimeout(() => el.remove(), 6500);
+  }
+}
+
+setupCanvas();
+</script>
+
+</body>
+</html>
